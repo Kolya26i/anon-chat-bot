@@ -1,7 +1,8 @@
 import telebot
 from telebot import types
 
-TOKEN = 'ТВОЙ_ТОКЕН'  # встав сюди свій токен
+import os
+TOKEN = os.getenv('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 users = {}
 waiting_list = []
